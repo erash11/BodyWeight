@@ -6,7 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Load the dataset
-file_path = r"C:\Users\Eric_Rash\OneDrive - Baylor University\AppliedPerformancProjects\CodingProjects\PythonScripts\DashDeploy\BW_061124.csv"
+file_path = "BW_061124.csv"
 data = pd.read_csv(file_path)
 
 # Convert the DATE column to datetime format
