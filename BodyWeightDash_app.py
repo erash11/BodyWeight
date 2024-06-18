@@ -20,6 +20,7 @@ data['YearMonth'] = data['DATE'].dt.to_period('M')
 
 # Create Dash app
 app = dash.Dash(__name__)
+
 app.config.suppress_callback_exceptions = True # Allow for dynamic callback components
 
 app.layout = html.Div([
@@ -152,4 +153,4 @@ def update_graph(mode, selected_value):
     return fig
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='127.0.0.1')
+    app.run_server(debug=True)
