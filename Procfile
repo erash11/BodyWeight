@@ -1,1 +1,1 @@
-gunicorn BodyWeightDash_app:app
+web: gunicorn BodyWeightDash_app:app
