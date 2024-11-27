@@ -20,6 +20,8 @@ data['YearMonth'] = data['DATE'].dt.to_period('M')
 
 # Create Dash app
 app = dash.Dash(__name__)
+server = app.server
+
 app.config.suppress_callback_exceptions = True # Allow for dynamic callback components
 
 app.layout = html.Div([
